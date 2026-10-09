@@ -12,7 +12,7 @@ Este proyecto realiza un análisis integral del dataset de Spotify (*Most Stream
 
 ## 🛠️ Herramientas Utilizadas
 
-- **Python (Pandas):** Limpieza de datos, tratamiento de nulos y transformación.
+- **Python (Pandas & NumPy):** Limpieza de datos, tratamiento de nulos, transformación y muestreo.
 - **SQL:** Consultas para análisis de reproducciones, tendencias y artistas top.
 - **HTML / CSS / JavaScript (Chart.js):** Desarrollo del Dashboard interactivo.
 
@@ -23,10 +23,13 @@ Este proyecto realiza un análisis integral del dataset de Spotify (*Most Stream
 1. **Tempo Ideal:** Las canciones con un tempo de **110 a 130 BPM** concentran el mayor número de reproducciones.
 2. **Bailabilidad:** Las canciones con más del **70% de Danceability** tienen mayor presencia en las playlists globales.
 
+> 💡 **Nota de Arquitectura de Datos:**  
+> Para la capa de visualización interactiva se aplicó un filtrado del **Top 1,000 de canciones más populares** mediante Python. Esto optimiza el rendimiento del navegador (renderizado DOM) y evita el solapamiento de puntos (*overplotting*) en el gráfico de dispersión, permitiendo analizar de forma clara las tendencias de audio del catálogo.
+
 ---
 
 ## 📁 Estructura del Repositorio
 
 - `index.html` : Dashboard interactivo web.
 - `data/` : Dataset procesado (`spotify_clean.csv`).
-- `scripts/` : Códigos de limpieza en Python y consultas SQL.
+- `scripts/` : Códigos de limpieza en Python (`01_limpieza.py`) y consultas SQL.
