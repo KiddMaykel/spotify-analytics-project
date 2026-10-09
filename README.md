@@ -2,6 +2,10 @@
 
 ¡Bienvenido a mi proyecto de análisis de datos de Spotify!
 
+🌐 **[👉 Ver Dashboard Interactivo en Vivo](https://kiddmaykel.github.io/spotify-analytics-project/)**
+
+---
+
 Este proyecto realiza un análisis integral del dataset de Spotify (*Most Streamed Songs*), abarcando desde la limpieza de datos con **Python**, consultas estratégicas con **SQL**, hasta la visualización en un **Dashboard Interactivo Web**.
 
 ---
